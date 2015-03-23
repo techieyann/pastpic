@@ -1,0 +1,17 @@
+<head>
+	<title>PastPic</title>
+</head>
+
+<template name="layout">
+	{{> navbar}}
+	<div class="container">
+
+		{{> yield}}
+		{{> footer}}
+		{{#if currentUser}}
+		{{#unless currentRoute 'pastPic'}}
+		{{> newPastPicButton}}
+		{{/unless}}
+		{{/if}}
+	</div>
+</template>

@@ -1,0 +1,11 @@
+.centered {
+		text-align: center;
+}
+
+ul.navbar-right>li {
+		text-align: right;
+}
+
+.hidden {
+		display: none;
+}

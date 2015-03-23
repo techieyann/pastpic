@@ -1,0 +1,35 @@
+<template name="index">
+	<div class="row">
+		<div class="col s12 m10 l6 offset-m1 offset-l3">
+			<br>
+			<a href="{{pathFor 'browse'}}" class="waves-effect waves-teal btn-flat col s12">
+				<i class="mdi-action-explore col s4 m5 right-align"></i> <div class="col s8 m7 left-align">Browse PastPics</div>
+			</a>
+			{{#if currentUser}}
+			<a href="{{pathFor 'yours'}}" class="waves-effect waves-teal btn-flat col s12">
+				<i class="mdi-image-camera-roll col s4 m5 right-align"></i> <div class="col s8 m7 left-align">Your PastPics</div>
+			</a>
+			<a href="{{pathFor 'about'}}" class="waves-effect waves-teal btn-flat col s12">
+				<i class="mdi-image-compare col s4 m5 right-align"></i> <div class="col s8 m7 left-align">About PastPic</div>
+			</a>
+			<a href="{{pathFor 'settings'}}" class="waves-effect waves-teal btn-flat btn-settings col s12">
+				<i class="mdi-action-settings col s4 m5 right-align"></i><div class="col s8 m7 left-align"> Settings</div>
+			</a>
+			<a href="#" class="waves-effect waves-teal btn-flat logout col s12">
+				<i class="mdi-action-exit-to-app col s4 m5 right-align"></i><div class="col s8 m7 left-align"> Sign out</div>
+			</a>
+			{{else}}
+			<a href="{{pathFor 'about'}}" class="waves-effect waves-teal btn-flat col s12">
+				<i class="mdi-image-compare col s4 m5 right-align"></i> <div class="col s8 m7 left-align">About PastPic</div>
+			</a>
+			<a href="{{pathFor 'accountForms'}}" class="waves-effect waves-teal btn-flat col s12">
+				<i class="mdi-action-account-circle col s4 m5 right-align"></i><div class="col s8 m7 left-align">Sign in/up</div>
+			</a>
+			{{/if}}
+		</div>
+	</div>
+</template>
+
+<template name="entrySignOut">
+
+</template>
