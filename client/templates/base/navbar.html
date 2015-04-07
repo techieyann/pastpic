@@ -2,7 +2,7 @@
 <nav>
 	<div class="nav-wrapper">
 		<a href="/" class="brand-logo">PastPic</a>
-		<a href="#" data-activates="mobile-navbar" class="button-collapse {{#if currentRoute 'index'}}hidden{{/if}}"><i class="mdi-navigation-menu"></i></a>
+		<a href="#" data-activates="mobile-navbar" class="button-collapse right {{#if currentRoute 'index'}}hidden{{/if}}"><i class="mdi-navigation-menu"></i></a>
 		{{#unless currentRoute 'index'}}
     <ul class="right hide-on-med-and-down">
       <li class="{{activeRoute 'browse'}}"><a href="{{pathFor 'browse'}}"><i class="mdi-action-explore"></i> Browse PastPics</a></li>
@@ -17,44 +17,44 @@
 			{{/if}}
     </ul>
 		{{/unless}}
-    <ul class="side-nav center-align" id="mobile-navbar">
+    <ul class="side-nav" id="mobile-navbar">
 			<li class="{{activeRoute 'browse'}}">
 				<a href="{{pathFor 'browse'}}">
-					<i class="mdi-action-explore"></i> Browse PastPics
+					<i class="mdi-action-explore right"></i> Browse PastPics
 				</a>
 			</li>
 			{{#if currentUser}}
 
 			<li class="{{activeRoute 'yours'}}">
 				<a href="{{pathFor 'yours'}}" class="waves-effect waves-teal">
-					<i class="mdi-image-camera-roll"></i> Your PastPics
+					<i class="mdi-image-camera-roll right"></i> Your PastPics
 				</a>
 			</li>
 
 			<li class="{{activeRoute 'settings'}}">
 				<a href="{{pathFor 'settings'}}">
-					<i class="tiny mdi-action-settings"></i> Settings
+					<i class="tiny mdi-action-settings right"></i> Settings
 				</a>
 			</li>
 			<li class="{{activeRoute 'about'}}">
 				<a href="{{pathFor 'about'}}">
-					<i class="mdi-image-compare"></i> About PastPic
+					<i class="mdi-image-compare right"></i> About PastPic
 				</a>
 			</li>
 			<li>
 				<a href="#" class="logout">
-					<i class="mdi-action-exit-to-app"></i> Sign out
+					<i class="mdi-action-exit-to-app right"></i> Sign out
 				</a>
 			</li>
 			{{else}}
 			<li class="{{activeRoute 'about'}}">
 				<a href="{{pathFor 'about'}}">
-					<i class="mdi-image-compare"></i> About PastPic
+					<i class="mdi-image-compare right"></i> About PastPic
 				</a>
 			</li>
 			<li class="{{activeRoute 'accountForms'}}">
 				<a href="{{pathFor 'accountForms'}}">
-					<i class="mdi-action-account-circle"></i> Sign in/up
+					<i class="mdi-action-account-circle right"></i> Sign in/up
 				</a>
 			</li>
 			{{/if}}

@@ -8,7 +8,8 @@ Template.navbar.helpers({
 Template.navbar.onRendered(function () {
 		$(document).ready(function () {
 			$('.button-collapse').sideNav({
-				menuWidth:200,
+				menuWidth:300,
+				edge: 'right',
 				closeOnClick: true
 			});
 		});
